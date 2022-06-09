@@ -204,6 +204,36 @@
             </div>
         </div>
     </section>
+
+    <div id="main">
+        <h2>Login or Register</h2>
+        <button onclick="showLoginModal()">login</button>
+        <button onclick="showRegisterModal()">register</button>
+    </div>
+
+    <div id="modal_background" onclick="closeModalFromBackground(event)">
+        <div class="modal" id="modal_container">
+            <div class="form_head">
+                <h1>Titlu fereastra</h1>
+            </div>
+            <div class="form_body">
+                <form id="login" class="form_inputs">
+                    <input type="text" placeholder="login">
+                    <input type="password" placeholder="password">
+                </form>
+                <form id="register" class="form_inputs">
+                    <input type="text" placeholder="login">
+                    <input type="email" placeholder="email@address.com">
+                    <input type="password" placeholder="password">
+                    <input type="password" placeholder="repeat password">
+                </form>
+            </div>
+            <div class="form_footer">
+                <button form="register" type="button" onclick="closeModal()">Cancel</button>
+                <button form="register" type="button">Submit</button>
+            </div>
+        </div>
+    </div>
 </main>
 <footer class="footer-container">
     <div class="footer-flex-container">
